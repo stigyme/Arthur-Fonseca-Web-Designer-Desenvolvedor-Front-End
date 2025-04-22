@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Designer & Front End Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png" type="image/x-icon" />
+</head>
+<body>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
+  <!-- Header -->
+  <header id="header" class="bg-mask">
+    <div class="mask" id="mask"></div>
+    <div class="container">
+      <nav>
+        <div class="logo" style="z-index: 5;">
+          <img src="logo.png">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()" style="z-index: 5;">☰</div>
+        <ul class="menu" id="menu">
+          <li><a href="#portfolio" style="z-index: 5;">Portfólio</a></li>
+          <li><a href="#services" style="z-index: 5;">Serviços</a></li>
+          <li><a href="#contact" style="z-index: 5;">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h2>Dê Vida à Sua Ideia com <br class="quebra-desktop">Soluções Digitais Incríveis</h2>
+        <p>Web Designer e Desenvolvedor Front-End com foco em <br class="quebra-desktop">criar sites modernos, funcionais e que realmente entregam resultados.</p>
+        <a href="#portfolio" class="cta-button hero-cta">VAMOS COMEÇAR!</a>
+      </div>
+    </div>
+
+  </header>
+
+  <!--carrossel-->
+  <section class="logo-carousel">
+    <div class="carousel-track">
+      <!-- Repetir logos para looping suave -->
+      <div class="logo-slide"><img src="images/logo1.png" alt="Logo 1" /></div>
+      <div class="logo-slide"><img src="images/logo2.png" alt="Logo 2" /></div>
+      <div class="logo-slide"><img src="images/logo3.png" alt="Logo 3" /></div>
+      <div class="logo-slide"><img src="images/logo4.png" alt="Logo 4" /></div>
+      <div class="logo-slide"><img src="images/logo5.png" alt="Logo 5" /></div>
+      <div class="logo-slide"><img src="images/logo6.png" alt="Logo 5" /></div>
+      <div class="logo-slide"><img src="images/logo1.png" alt="Logo 1" /></div>
+      <div class="logo-slide"><img src="images/logo2.png" alt="Logo 2" /></div>
+      <div class="logo-slide"><img src="images/logo3.png" alt="Logo 3" /></div>
+      <div class="logo-slide"><img src="images/logo4.png" alt="Logo 4" /></div>
+      <div class="logo-slide"><img src="images/logo5.png" alt="Logo 5" /></div>
+      <div class="logo-slide"><img src="images/logo6.png" alt="Logo 5" /></div>
+      <div class="logo-slide"><img src="images/logo1.png" alt="Logo 1" /></div>
+      <div class="logo-slide"><img src="images/logo2.png" alt="Logo 2" /></div>
+      <div class="logo-slide"><img src="images/logo3.png" alt="Logo 3" /></div>
+      <div class="logo-slide"><img src="images/logo4.png" alt="Logo 4" /></div>
+      <div class="logo-slide"><img src="images/logo5.png" alt="Logo 5" /></div>
+      <div class="logo-slide"><img src="images/logo6.png" alt="Logo 5" /></div>
+      <div class="logo-slide"><img src="images/logo1.png" alt="Logo 1" /></div>
+      <div class="logo-slide"><img src="images/logo2.png" alt="Logo 2" /></div>
+      <div class="logo-slide"><img src="images/logo3.png" alt="Logo 3" /></div>
+      <div class="logo-slide"><img src="images/logo4.png" alt="Logo 4" /></div>
+      <div class="logo-slide"><img src="images/logo5.png" alt="Logo 5" /></div>
+      <div class="logo-slide"><img src="images/logo6.png" alt="Logo 5" /></div>
+    </div>
+  </section>
+  
+  <!-- Portfolio -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Meu Portfólio</h2>
+  </section>
+  <section class="galeria-links">
+    <a href="https://stigyme.github.io/StiGy-Studio/"><img src="images/Frame5.png" alt="Imagem 5" /></a>
+    <a href="https://moviesforyou.com.br/"><img src="images/Frame1.png" alt="Imagem 1" /></a>
+    <a href="https://performanceacademy.education/vender-mais-com-ia-v2/"><img src="images/Frame2.png" alt="Imagem 2" /></a>
+    <a href="https://performanceacademy.education/"><img src="images/Frame3.png" alt="Imagem 3" /></a>
+    <a href="https://performanceacademy.education/curso-de-ia-para-empresarios-em-sao-paulo/"><img src="images/Frame4.png" alt="Imagem 4" /></a>
+    <a href="https://zappiello.com.br/"><img src="images/Frame6.png" alt="Imagem 6" /></a>
+  </section>
+  
+  <section class="video-section">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="images/webprojects.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+    <div class="video-overlay">
+      <!-- Conteúdo por cima do vídeo (opcional) -->
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>O Que Posso Criar Para Você</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img class="services-img" src="images/design-creative.png" alt="Creative Design">
+          <h3>Design Creativo</h3>
+          <p>Layouts personalizados feitos sob medida para refletir a identidade da sua marca.</p>
+        </div>
+        <div class="service-card">
+          <img class="services-img" src="images/webdev.png" alt="Creative Design">
+          <h3>Desenvolvimento <br>Front-End</h3>
+          <p>Sites responsivos e otimizados para uma experiência do usuário fluida em qualquer dispositivo.</p>
+        </div>
+        <div class="service-card">
+          <img class="services-img" src="images/growup.png" alt="Creative Design">
+          <h3>Resultados Tangíveis</h3>
+          <p>Designs que transformam visitantes em clientes e impulsionam o seu negócio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Vamos Trabalhar Juntos</h2>
+    <div class="container">
+      <div class="contact-content">
+        <div class="author-info">
+          <div>
+              <p>Olá, sou Arthur Fonseca – Web Designer & Desenvolvedor Front-End.
+              <br><br>
+              Com mais de 6 anos de experiência, transformo suas ideias em sites impressionantes e de alta performance.
+              Sou um profissional dedicado e qualificado, e já ajudei mais de 50 empresas a fortalecerem sua presença online com soluções sob medida que geram resultados reais.
+              <br><br>  
+              Especializado em designs modernos, funcionalidades fluídas e experiências amigáveis para o usuário, estou aqui para tirar sua visão do papel e tornar seus objetivos digitais realidade. 
+              <br><br> 
+              Vamos criar algo incrível juntos? Seu site dos sonhos começa aqui!</p>
+          </div>
+          <div>
+            <img src="perfil.png" alt="Author Photo" style="border-radius: 20px;">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section>
+    <div class="section">
+      <h2>Comece o Seu Projeto</h2>
+      <p>Me conte sobre sua ideia e vamos fazer acontecer.</p>
+      </div>
+      <form id="meu-form" action="https://formspree.io/f/xjkypyqb" method="POST" class="form-lead">
+        
+        <label>
+          Nome:
+          <input type="text" name="name" required />
+        </label>
+      
+        <label>
+          E-mail:
+          <input type="email" name="email" required />
+        </label>
+      
+        <label>
+          Conte algo sobre seu projeto:
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+      
+        <button type="submit">Enviar</button>
+      </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Arthur Fonseca. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/arthur-fonseca-76018620a"><img src="images/in.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/stigy.me/"><img src="images/ig.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('meu-form');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+  
+      if (res.ok) {
+        window.location.href = 'https://www.upwork.com/freelancers/~01aa6ae42638ce0e82?mp_source=share"';
+      } else {
+        alert('Error. Please try again.');
+      }
+    });
+  </script>
+
+<script>
+  const mask = document.getElementById('mask');
+
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    mask.style.webkitMask = `radial-gradient(circle 320px at ${x}px ${y}px, transparent 30%, black 100%)`;
+    mask.style.mask = `radial-gradient(circle 320px at ${x}px ${y}px, transparent 30%, black 100%)`;
+  });
+</script>
+
+</body>
+</html>
